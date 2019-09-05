@@ -49,7 +49,7 @@ names(Y) <- "activity"
 
 names(Subject) <- "subject"
 tidy <- cbind(Subject, Y, X)
-write.table(tidy, "tidy_dataset.txt")
+write.table(tidy, "tidy_dataset.txt", row.names = FALSE)
 
 
 # STEP 5 - Creates a 2nd, independent tidy data set with the average of each variable for each activity and each subject.
